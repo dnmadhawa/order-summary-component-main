@@ -33,13 +33,13 @@ p {
 }
 
 .box-body {
-  margin: 45px;
+  margin: 45px 50px;
   display: flex;
   flex-direction: column;
   text-align: center;
 }
 
-.box-body h1 {
+.box-body h2 {
   color: hsl(223, 47%, 23%);
   font-weight: 900;
   margin: 0;
@@ -88,6 +88,7 @@ p {
 .plans a {
   font-weight: 700;
   color: hsl(245, 75%, 52%);
+  font-size: 16px;
 }
 
 .plans a:hover {
@@ -101,7 +102,7 @@ p {
   border: hidden;
   border-radius: 6px;
   padding: 15px;
-  margin: 20px 0 10px 0;
+  margin: 25px 0 10px 0;
   font-weight: 700;
   box-shadow: 0px 14px 17px 0px rgba(115, 129, 168, 0.31);
   cursor: pointer;
@@ -127,7 +128,7 @@ p {
     width: 92%;
   }
 
-  .box-body h1 {
+  .box-body h2 {
     font-size: 22px;
   }
 
