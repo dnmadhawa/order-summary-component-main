@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700&display=swap");
 body {
   background-color: hsl(225, 100%, 94%);
   background-image: url(../images/pattern-background-desktop.svg);
@@ -8,9 +9,14 @@ body {
   width: 1440px;
 }
 
+p {
+  font-weight: 600;
+  font-size: 16px;
+}
+
 .box {
   background-color: #fff;
-  width: 425px;
+  width: 400px;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -25,7 +31,7 @@ body {
 }
 
 .box-body {
-  margin: 40px;
+  margin: 30px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -48,7 +54,10 @@ body {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  margin: 15px 0 20px 0;
+  margin: 0 0 10px 0;
+  padding: 20px;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 6px;
 }
 
 .plans img {
@@ -63,6 +72,10 @@ body {
   margin: 0;
 }
 
+.price {
+  padding-right: 10px;
+}
+
 .price h3,
 .price p {
   margin-left: 0;
@@ -72,6 +85,12 @@ body {
 .plans a {
   font-weight: 700;
   color: hsl(245, 75%, 52%);
+  justify-self: flex-end;
+}
+
+.plans a:hover {
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .proceed {
@@ -92,7 +111,41 @@ body {
   border: hidden;
   border-radius: 6px;
   padding: 15px;
-  margin: 10px 0 0px 0;
+  margin: 5px 0 0px 0;
   font-weight: 700;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    background-image: url(../images/pattern-background-mobile.svg);
+  }
+
+  .box {
+    width: 92%;
+  }
+
+  .box-body h1 {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .box-body {
+    margin: 18px;
+  }
+
+  .plans h3 {
+    font-size: 18px;
+  }
+
+  .plans a {
+    font-size: 16px;
+  }
+
+  .proceed {
+    margin: 0;
+  }
 }
