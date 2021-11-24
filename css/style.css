@@ -39,7 +39,7 @@ p {
   text-align: center;
 }
 
-.box-body h2 {
+.box-body h1 {
   color: hsl(223, 47%, 23%);
   font-weight: 900;
   margin: 0;
@@ -67,9 +67,10 @@ p {
   width: 50px;
 }
 
-.price h4 {
+.price h2 {
   margin: 0;
   color: hsl(223, 47%, 23%);
+  font-size: 16px;
 }
 
 .plans p {
@@ -80,7 +81,7 @@ p {
   padding-right: 70px;
 }
 
-.price h4,
+.price h2,
 .price p {
   margin-left: 0;
   text-align: left;
@@ -137,7 +138,7 @@ p {
     margin: 18px;
   }
 
-  .plans h4 {
+  .plans h2 {
     font-size: 18px;
   }
 
